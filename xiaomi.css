@@ -1,0 +1,308 @@
+*{
+	margin:0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.header-in, .nav, .banner, .product-in, .help, .messages{
+	width:1224px;
+	margin:0 auto;
+}
+/* header start */
+.header{
+	height: 40px;
+	background-color: #333333;
+}
+.header ul{
+	height:12px;
+	line-height: 12px;
+}
+.header ul li{
+	float:left;
+	border-right:2px solid #40403B;
+	padding:0 6px;
+	margin-top:15px;
+}
+.header ul li a{
+	color:#B0B0B0;
+	font-size:12px;
+}
+.header ul li a:hover{
+	color:#FF6700;
+	text-decoration: underline;
+}
+.header ul  .last-li{
+	border:none;
+}/* li与.last-li是平级，所以应该是ul下的类，而不是li下的类 */
+/* header end */
+
+/* nav start */
+
+.nav{
+	margin:22px 0 22px 64px;
+}
+.nav .logo{
+	float:left;
+}
+.nav ul{
+	height:70px;
+	line-height: 70px;
+}
+.nav ul li{
+	float:left;
+	padding-left:26px;
+
+}
+.nav ul li a{
+	color:#333;
+}
+.nav ul li a:hover{
+	color:#FF6700;
+	text-decoration: underline;
+}
+
+/* nav end */
+
+/* banner strat */
+/* 没banner的大图，分两边做的，
+	左边用背景颜色做的（好丑），
+	右边是banner大图 */
+
+ /* big-banner start */
+  /* big-banner left start*/
+  .banner .big-banner .left{
+  	height:458px;
+  	background:#2C505F;
+  	width: 235px;
+  	float:left;
+  }
+  .banner .big-banner .left ul{
+  	padding-left:28px;
+  	margin-top:35px;
+  }
+	/* 左侧导航栏的三角先做成背景图片了，以后学了js再改 */
+  .banner .big-banner .left ul li{
+  	padding-bottom:20px;
+  	background: url(images/sanjiao.png) no-repeat 180px 6px;
+  }
+  .banner .big-banner .left ul li a{
+  	color:#fff;
+  	font:normal 14px "Microsoft Yahei";
+  }
+  .banner .big-banner .left ul li a:hover{
+  	color:#FF6700;
+  	text-decoration: underline;
+  }
+  /* big-banner left end*/
+
+  /* big-banner right start*/
+    .banner .big-banner .right{
+  	float:right;
+  }
+  /* big-banner right end*/
+ /* big-banner end */
+
+
+/* small-banner start */
+.banner .small-banner{
+	margin:20px 0 66px 0;
+}
+
+.banner .small-banner div{
+	display: inline-block; 
+	/* 将div转化为行内块，可以一行显示 */
+}
+.banner .small-banner .sright-banner img{
+	width: 316px;
+	padding-left:8px;
+}
+
+/* small-banner end */
+
+/* banner end */
+
+/* product start */
+.product{
+	background-color: #F5F5F5;
+}
+.title{
+	padding-bottom:18px;
+}
+.title h2{
+	font-weight: normal;
+	float:left;
+}
+.title h4{
+	font-weight: normal;
+	float:right;
+	margin-right:35px;
+}
+.title h4 a{
+	color:#333;
+}
+.title  h4 a:hover{
+	color:#FF6700;
+	text-decoration: underline;
+}
+.product-in{
+	padding:78px 0 64px 0;
+}
+.product-left{
+	float:left;
+}
+.product-right ul li{
+	width: 235px;
+	height: 300px;
+	background-color: #fff;
+	float:left;
+	margin:0 0 14px 10px;
+	text-align: center;
+	position:relative;
+}
+/* 利用定位设置小便签 */
+.product-right ul li .noprice{
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-32px;
+}
+.product-right ul li h4 a{
+/* h标签和a标签是特殊标签，无法在li父元素中设置字体，需要单独定义 */
+	color:#333;
+	font:normal 14px "Microsoft Yahei";
+}
+.product-right ul li h4 a:hover{
+	color:#FF6700;
+	text-decoration: underline;	
+}
+.product-right ul li h6{
+	color:#B0B0B0;
+	font:normal 12px "Microsoft Yahei";
+	margin: 5px 0 10px 0;
+}
+.product-right ul li span{
+	color:#FF6700;
+	font:normal 14px "Microsoft Yahei";
+}
+.product-right ul li span.onceprice{
+	color:#B0B0B0;
+	font:normal 14px "Microsoft Yahei";
+	text-decoration: line-through;
+	margin-left:5px; 
+/* 行内元素可以添加水平方向的内外边距 */
+}
+.product-right ul li .img img{
+	width: 200px;
+	height: 160px;
+	margin:25px 32px 20px 16px;
+}
+
+/* product end */
+
+/* footer start */
+
+.footer{
+	background-color: #FAFAFA;
+}
+.footer .footer-top{
+	background-color: #fff;
+}
+
+.footer .footer-top .help{
+	padding:60px 0 40px 0;
+} 
+.footer .footer-top .help dl{
+	padding-right:105px;
+	float:left;
+}
+.footer .footer-top .help dl dt{
+	color:#333;
+	margin-bottom:32px;
+}
+.footer .footer-top .help dl dd{
+	margin-bottom:10px;
+}
+.footer .footer-top .help dl dd a{
+	color:#757575;
+	font:12px "Microsoft Yahei";
+}
+.footer .footer-top .help dl dd a:hover{
+	color:#FF6700;
+	text-decoration: underline;
+}
+
+.footer .footer-top .help .telphone{
+	border-left:1px solid #ECECEC;
+	height: 120px;
+	width: 200px;
+	text-align: center;
+	float:left;
+}
+.footer .footer-top .help .telphone h3{
+	color:#FF6700;
+	font:normal 20px "Microsoft Yahei";
+}
+.footer .footer-top .help .telphone span{
+	color:#616161;
+	font:normal 12px "Microsoft Yahei";
+}
+
+.footer .footer-bottom{
+	background-color: #FAFAFA;
+}
+.footer .footer-bottom .messages{
+	padding:35px;
+}
+.footer .footer-bottom .messages img{
+	float:left;
+	margin-right:5px;
+}
+.footer .footer-bottom .messages ul li{
+	float:left;
+	height:14px;
+	line-height: 14px;
+	border-right:2px solid #BABACC;
+	padding:0 3px;
+}
+.footer .footer-bottom .messages ul li a{
+	color:#757575;
+	font:14px "Microsoft Yahei";
+}
+.footer .footer-bottom .messages ul li a:hover{
+	color:#FF6700;
+	text-decoration: underline;
+}
+.footer .footer-bottom .messages ul li.lastli{
+	border-right:none;
+}
+.footer .footer-bottom .messages ul.explain li{
+	color:#B0B0B0;
+	font:12px "Microsoft Yahei";
+	border:none;
+	padding:3px;
+}
+.footer .footer-bottom p{
+	font:24px "楷体";
+	color:#B0B0B0;
+	text-align: center;
+	padding-bottom:30px;
+}
+/* footer end */
+
+/* 清除浮动start*/
+
+.clearfix:before, .clearfix:after{
+	content:"";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+.clearfix{
+	*zoom:1;
+}
+/* 清除浮动end*/
